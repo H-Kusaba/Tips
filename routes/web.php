@@ -17,7 +17,8 @@ Route::get('/', function () {
 //記事更新・新規登録
 Route::get('edit' ,'ArticleEditController@viewAll');
 //記事一覧
-Route::get('view' ,'ArticleViewController@viewAll');
+Route::get('view' ,   'ArticleViewController@viewAll');
+Route::get('content', 'ArticleViewController@content');
 //Eloquentの例
 Route::get('example', 'ArticleController@index');
 //検索

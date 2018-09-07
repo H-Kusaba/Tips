@@ -14,13 +14,12 @@
     @endif
     <form action="confirm" method="post">
         {{ csrf_field() }}
-        
         <p>タイトル</p>
             <input type="text" name="title" value="{{$form->title}}">
         <p>カテゴリー</p>
         <select name="p_id">
             <option value="null">選択してください</option>
-            <option value="1" {{ $form->p_id == 1 ? "selected" : "" }} >PHP</option>
+            <option value="1" {{ $form->p_id == 1 ? "selected" : "" }}>PHP</option>
             <option value="2" {{ $form->p_id == 2 ? "selected" : "" }}>Laravel</option>
         </select>
         <p>本文</p>
@@ -28,7 +27,11 @@
         <p>サンプルコード</p>
         <textarea name="body_code">{{$form->body_code}}</textarea>
         <input type="hidden" name="id" value="{{$form->id}}">
-        <input type="submit" value="send">
+        <br>
+        <input type="submit" value="送信">
+        <br>
+        <br>
+        <a class="button" href="/update" >戻る</a>
     </form>
 
 @endsection
