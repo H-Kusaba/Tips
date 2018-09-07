@@ -16,6 +16,7 @@
         {{ csrf_field() }}
         <p>タイトル</p>
             <input type="text" name="title" value="{{$form->title}}">
+            <!-- DBのデータとoldが競合する場合どうするか -->
         <p>カテゴリー</p>
         <select name="p_id">
             <option value="null">選択してください</option>
@@ -27,11 +28,13 @@
         <p>サンプルコード</p>
         <textarea name="body_code">{{$form->body_code}}</textarea>
         <input type="hidden" name="id" value="{{$form->id}}">
+        <input type="hidden" name="update" value="UPDATE">
         <br>
         <input type="submit" value="送信">
         <br>
         <br>
         <a class="button" href="/update" >戻る</a>
+        
     </form>
 
 @endsection

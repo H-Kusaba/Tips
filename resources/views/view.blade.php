@@ -3,15 +3,6 @@
 @section('title', 'VIEW')
 
 @section('main')
-    <!--table>
-        <tr><th>TITLE</th><th>CREATED_AT</th></tr>
-        @foreach ($articles as $article)
-            <tr>
-                <td><a href="/content?id={{$article->id}}">{{$article->title}}</a></td>
-            <td>{{$article->created_at}}</td>
-        </tr>
-        @endforeach
-    </table-->
     <header>
         <h1>PHP,Laravelの使い方をピンポイントで解説</h1>
         <p>関数やメソッドについて記載していきます。</p>
