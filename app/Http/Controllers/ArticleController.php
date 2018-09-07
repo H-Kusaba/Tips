@@ -32,7 +32,7 @@ class ArticleController extends Controller
         return view('Article.insert');
     }
     
-    public function create(Request $request)
+    public function create(ArticleRequest $request)
     {
         $this->validate($request, Article::$rules);
         $article = new Article;
@@ -41,13 +41,11 @@ class ArticleController extends Controller
         $article->fill($form)->save();
         return redirect('view');
     }
-    //CONFIRM
-    public function confirm(Request $request)
+    //確認画面
+    public function confirm(ArticleRequest $request)
     {
-        //return var_dump($request);
         $data = $request->all();
         return view('Article.confirm', ['data' => $data]);
-        //, ['result' => $request]);
     }
     public function finish(Request $request)
     {
