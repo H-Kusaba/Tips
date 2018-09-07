@@ -30,5 +30,8 @@ Route::post('insert', 'ArticleController@create');
 //更新
 Route::get('update', 'ArticleController@updateSet');
 Route::post('confirm', 'ArticleController@confirm');
-Route::post('finish', 'ArticleController@update');
+//フィニッシュにつないだ時にアップデート処理をしている
+Route::post('finish', 'ArticleController@DBaffect');
 //Route::post('', 'ArticleController@update');
+
+?>
