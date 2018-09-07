@@ -14,9 +14,9 @@
     @endif
     <form action="confirm" method="post">
         {{ csrf_field() }}
-        <p>title</p>
+        <p>タイトル</p>
         <input type="text" name="title" value="{{old('title')}}">
-        <p>p_id</p>
+        <p>カテゴリ</p>
         <select name="p_id">
             <option value="null">選択してください</option>
             <option value="1" @if(old('p_id') == 1) selected @endif>PHP</option>

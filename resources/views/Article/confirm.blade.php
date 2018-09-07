@@ -3,7 +3,6 @@
 @section('title', 'CONFIRM')
 
 @section('main')
-    <p>{{var_dump($data)}}</p>
     <form action="finish" method="post">
             {{ csrf_field() }}
             <table>
