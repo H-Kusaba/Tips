@@ -13,5 +13,5 @@
         </tr>
         @endforeach
     </table>
-    <a class="button" href="/Article/public/edit">編集画面へ</a>
+    <a class="button" href="/edit">編集画面へ</a>
 @endsection
