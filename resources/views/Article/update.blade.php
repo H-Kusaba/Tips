@@ -20,8 +20,8 @@
         <p>カテゴリー</p>
         <select name="p_id">
             <option value="null">選択してください</option>
-            <option value="1" >PHP</option>
-            <option value="2" >Laravel</option>
+            <option value="1" {{ $form->p_id == 1 ? "selected" : "" }} >PHP</option>
+            <option value="2" {{ $form->p_id == 2 ? "selected" : "" }}>Laravel</option>
         </select>
         <p>本文</p>
         <textarea name="body">{{$form->body}}</textarea>

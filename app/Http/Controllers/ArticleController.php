@@ -31,7 +31,6 @@ class ArticleController extends Controller
     {
         return view('Article.insert');
     }
-    
     public function create(ArticleRequest $request)
     {
         $this->validate($request, Article::$rules);
