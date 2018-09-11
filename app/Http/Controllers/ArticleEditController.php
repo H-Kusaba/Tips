@@ -14,16 +14,4 @@ class ArticleEditController extends Controller
         return view('edit', ['articles' => $articles]);
         //bladeのリンク先をオートフィルのフォーム画面に遷移させる
     }
-    /*
-    public function update()
-    {
-        //hogehoge
-        return redirect('/view');
-        //フォーム入力し更新した後に、記事一覧へ遷移
-    }
-    public function insert()
-    {
-        
-    }
-    */
 }

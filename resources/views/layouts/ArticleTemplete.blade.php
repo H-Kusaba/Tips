@@ -17,22 +17,20 @@
 
                 <!-- Logo -->
                 <a href="#" class="logo">
-                    <!-- span class="symbol"><img src="{{ asset('images/logo.svg') }}" alt="" /></span -->
+                    <span class="symbol"><img src="{{ asset('images/logo.svg') }}" alt="" /></span>
                     <span class="title">@yield('title')</span>
                 </a>
 
-                <!-- Nav 
+                <Nav>
                 <nav>
                     <ul>
                         <li><a href="#menu">Menu</a></li>
                     </ul>
                 </nav>
-                -->
-
             </div>
         </header>
 
-        <!-- Menu 
+        <Menu>
         <nav id="menu">
             <h2>Menu</h2>
             <ul>
@@ -43,7 +41,6 @@
                 <li><a href="elements.html">Elements</a></li>
             </ul>
         </nav>
-        -->
 
         <!-- Main -->
         <div id="main">
@@ -101,6 +98,6 @@
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/browser.min.js') }}"></script>
     <script src="{{ asset('js/breakpoints.min.js') }}"></script>
-    <script src="{{ asset('assets/js/util.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('js/util.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>

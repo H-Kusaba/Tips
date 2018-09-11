@@ -25,7 +25,7 @@ class ArticleRequest extends FormRequest
     {
         return [
             'title' => 'required|max:50',
-            'p_id'  => 'between:1,2|required',//bladeから修正する
+            'p_id'  => 'between:1,2|required',//bladeから<option>を修正する
             'body'  => 'required',
             'body_code' => ''
         ];
@@ -36,8 +36,9 @@ class ArticleRequest extends FormRequest
         return [
             'title.required' => 'タイトルは必須入力です。',
             'title.max'      => 'タイトルは50文字以内にしてください。',
+            'p_id.between'   => 'カテゴリーは必須選択です。',
             'p_id.required'  => 'カテゴリーは必須選択です。',
-            'body.required`' => '本文は必須入力です。'
+            'body.required' => '本文は必須入力です。',
         ];
     }
 }
